@@ -26,8 +26,6 @@ public class InfiniteArray {
     static int binarySearch(int[] arr , int target , int start , int end){
 
         while(start<=end){
-//            int mid = (start + end) / 2; // might pe possible that (start+end) exceeds the range and then gives error
-            // Better way below:
             int mid = start + (end-start) / 2;
 
             if (target < arr[mid]){
